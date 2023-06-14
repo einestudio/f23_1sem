@@ -214,6 +214,18 @@ section {
     height: 50vh;
     margin-top: -35px;
   }
+
+  .billede-3 {
+    width: 90vw;
+    height: 50vh;
+    margin-top: -35px;
+  }
+
+  .billede-4 {
+    width: 90vw;
+    height: 50vh;
+    margin-top: -35px;
+  }
   .tekst-2 {
     width: 55vw;
     min-height: 260px;
@@ -258,7 +270,7 @@ section {
     text-decoration: none;
     position: fixed;
     padding: 0px;
-    padding-top: 20px;
+    padding-top: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
