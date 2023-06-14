@@ -1,0 +1,22 @@
+<div class="wrapper">
+    <div class="left2" id="ADOBEXD"></div>
+    <div class="right2">
+        <div class="content">
+            <h1>XD LAYOUT</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia assumenda dolore reprehenderit
+                ullam
+                blanditiis ex sapiente pariatur tempore incidunt facilis?</p>
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="left3" id="PRODUKTION"></div>
+    <div class="right3">
+        <div class="content">
+            <h1> PRODUKTION</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia assumenda dolore reprehenderit
+                ullam
+                blanditiis ex sapiente pariatur tempore incidunt facilis?</p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,468 @@
+******************reset************************ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "SF-Pro-Display-Regular";
+  src: url("SF-Pro-Display-Regular.woff2") format(woff2), url("SF-Pro-Display-Regular.woff") format(woff);
+  font-weight: normal;
+  font-style: normal;
+}
+
+/***************************font***************************/
+@font-face {
+  font-family: "NuberNextExtended-Heavy";
+  src: url("NuberNextExtended-Heavy.woff2") format(woff2), url("NuberNextExtended-Heavy.woff") format(woff);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF-Pro-Display-Bold";
+  src: url("SF-Pro-Display-Bold.woff2") format(woff2), url("SF-Pro-Display-Bold.woff") format(woff);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF-Pro-Display-Heavy";
+  src: url("SF-Pro-Display-Heavy.woff2") format(woff2), url("SF-Pro-Display-Heavy.woff") format(woff);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF-Pro-Display-Regular";
+  src: url("SF-Pro-Display-Regular.woff2") format(woff2), url("SF-Pro-Display-Regular.woff") format(woff);
+  font-weight: normal;
+  font-style: normal;
+}
+
+/********************************main********************************/
+body {
+  width: 100vw;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  background-color: #f4f4f4;
+}
+
+header {
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.header {
+  max-width: 1224px;
+  width: 90%;
+  color: #223845;
+  text-decoration: none;
+  position: fixed;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 5;
+}
+
+.bokse-4 {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: normal;
+  background: none;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.index_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  font-family: "SF-Pro-Display-Bold";
+  text-decoration: none;
+  color: #223845;
+  box-sizing: border-box;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+
+.bg-container {
+  background-color: #fff;
+  height: 150px;
+  width: 100vw;
+  background-image: linear-gradient(60deg, #ff6596, #60f89f, #535acd);
+  background-size: 600% 600%;
+  animation: bgAnimatedGradient 30s infinite linear;
+}
+
+/***************************nav***************************/
+.nav-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+span {
+  background-color: #223845;
+  border-radius: 25px;
+  /*  margin: 25px 30px 0 0; */
+  margin-right: 39px;
+  margin-top: 20px;
+  position: fixed;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  font-size: 35px;
+  z-index: 5;
+}
+
+.overlay {
+  height: 0%;
+  width: 100vw;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background-color: #535acd;
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.expand {
+  height: 0%;
+  width: 100vw;
+  z-index: 2;
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.expand_a1 {
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+  transition: 0.3s;
+  font-family: "NuberNextExtended-Heavy";
+  letter-spacing: 2px;
+  white-space: nowrap;
+}
+
+.overlay-content {
+  position: relative;
+  top: 15%;
+  width: 100vw;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 10px;
+  text-decoration: none;
+  font-size: 45px;
+  color: #e1ea88;
+  display: block;
+  transition: 0.3s;
+  font-family: "NuberNextExtended-Heavy";
+  letter-spacing: 2px;
+}
+
+.expand a {
+  text-decoration: none;
+  color: #223845;
+  font-size: 20px;
+  display: block;
+  transition: 0.3s;
+  font-family: "NuberNextExtended-Heavy";
+  letter-spacing: 4px;
+  white-space: nowrap;
+}
+
+/***************************animation hover***************************/
+
+.overlay-content a:hover {
+  color: #f4f4f4;
+  letter-spacing: 5px;
+}
+
+.expand a:hover {
+  color: #e1ea88;
+  letter-spacing: 7px;
+  transition: 0.5s;
+}
+
+.tekst-1 {
+  transition: 1s;
+}
+
+.tekst-1:hover {
+  transform: scale(1.1);
+}
+
+.billede-1 {
+  transition: 0.8s;
+  opacity: 0.6;
+}
+
+.billede-1:hover {
+  transform: scale(1.08);
+  opacity: 1;
+}
+
+.tekst-2 {
+  transition: 1s;
+}
+
+.tekst-2:hover {
+  transform: scale(1.1);
+}
+
+.billede-2 {
+  transition: 0.8s;
+  opacity: 0.6;
+}
+
+.billede-2:hover {
+  transform: scale(1.08);
+  opacity: 1;
+}
+
+.billede-3 {
+  transition: 0.8s;
+  opacity: 0.6;
+}
+
+.billede-3:hover {
+  transform: scale(1.08);
+  opacity: 1;
+}
+
+.billede-4 {
+  transition: 0.8s;
+  opacity: 0.6;
+}
+
+.billede-4:hover {
+  transform: scale(1.08);
+  opacity: 1;
+}
+
+.billede-5 {
+  transition: 0.8s;
+  opacity: 0.6;
+}
+
+.billede-5:hover {
+  transform: scale(1.08);
+  opacity: 1;
+}
+
+.content {
+  transition: 0.5s;
+}
+
+.content:hover {
+  color: #f4f4f4;
+  letter-spacing: 0.5px;
+  opacity: 0.99;
+}
+
+.content h1 {
+  transition: 0.8s;
+}
+
+.content h1:hover {
+  color: #f4f4f4;
+  letter-spacing: 8px;
+  opacity: 0.99;
+}
+
+.box02-01-02 {
+  transition: 0.8s;
+}
+
+.box02-01-02:hover {
+  color: #f4f4f4;
+  letter-spacing: 2px;
+  opacity: 0.99;
+}
+
+.box03-04-01 {
+  transition: 0.8s;
+}
+
+.box03-04-01:hover {
+  color: #f4f4f4;
+  letter-spacing: 2px;
+  opacity: 0.99;
+}
+
+.box05-02-01 {
+  transition: 0.8s;
+}
+
+.box05-02-01:hover {
+  color: #f4f4f4;
+  letter-spacing: 2px;
+  opacity: 0.99;
+}
+
+.box05-01-01 {
+  transition: 0.8s;
+}
+
+.box05-01-01:hover {
+  color: #f4f4f4;
+  letter-spacing: 2px;
+  opacity: 0.99;
+}
+
+.expand_a1 a:hover {
+  color: #e1ea88;
+  letter-spacing: 3px;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: #f4f4f4;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  padding-right: 10%;
+  top: 0px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 350px) {
+  .overlay {
+    overflow-y: auto;
+  }
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+/***************************media query***************************/
+
+@media screen and (max-width: 768px) {
+  .overlay {
+    overflow-y: auto;
+  }
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 5px;
+    right: 35px;
+  }
+
+  .expand a {
+    font-size: 3vw;
+  }
+}
+
+@media (max-width: 1080px) {
+  .expand_a1 {
+    text-decoration: none;
+    font-size: 1em;
+    display: block;
+    transition: 0.3s;
+    font-family: "NuberNextExtended-Heavy";
+    letter-spacing: 2px;
+    white-space: nowrap;
+  }
+
+  .header {
+    max-width: 1224px;
+    width: 90%;
+    color: #223845;
+    text-decoration: none;
+    position: fixed;
+    padding: 0px;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  h3 {
+    font-size: 1em;
+    text-align: left;
+    padding-left: 0px;
+    padding-right: 10%;
+    margin-top: 70px;
+    font-family: "SF-Pro-Display-Bold";
+    letter-spacing: 5px;
+    color: #60538e;
+  }
+
+  span {
+    background-color: #223845;
+    border-radius: 15px;
+    /*  margin: 25px 30px 0 0; */
+    margin-right: 30px;
+    margin-top: 60px;
+    position: fixed;
+    padding: 5px 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 35px;
+  }
+
+  .overlay .closebtn {
+    position: absolute;
+    padding-right: 10%;
+    top: 5px;
+    right: 30px;
+    font-size: 60px;
+  }
+}
+
+/***************************body***************************/
+
+h3 {
+  font-size: 30px;
+  text-align: left;
+  padding-left: 30px;
+  padding-right: 10%;
+  margin-top: 60px;
+  font-family: "SF-Pro-Display-Bold";
+  letter-spacing: 5px;
+  color: #60538e;
+}
+
+@media (max-width: 1080px) {
+}
+
+/***************************grid***************************/
+
+.expand {
+  display: grid;
+}
+
+/***************************keyframes***************************/
+
+@keyframes bgAnimatedGradient {
+  0% {
+    background-position: 0 85%;
+  }
+  50% {
+    background-position: 100% 20%;
+  }
+  100% {
+    background-position: 0% 85%;
+  }
+}

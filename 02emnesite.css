@@ -1,0 +1,327 @@
+.box02-01-01 {
+  margin-left: -70px;
+  margin-right: -70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  font-family: "SF-Pro-Display-Bold";
+  text-decoration: none;
+  color: #223845;
+  box-sizing: border-box;
+}
+
+/*****************************content*****************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#myBtn {
+  visibility: hidden;
+  font-family: "SF-Pro-Display-Bold";
+  color: #223845;
+  font-size: 15px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 10px 15px;
+  background-image: linear-gradient(60deg, #ff6596, #60f89f, #535acd);
+  background-size: 1000% 1000%;
+  animation: bgAnimatedGradient 30s infinite linear;
+  border-radius: 10px;
+  border-radius: 3px solid #fff;
+  cursor: pointer;
+  transition: all 0.8s ease 0s;
+  z-index: 2;
+}
+
+#myBtn:hover {
+  letter-spacing: 4px;
+  background-color: #535acd;
+  background-image: none;
+  color: #e1ea88;
+  font-family: "NuberNextExtended-Heavy";
+  transition: ease-out 0.8s;
+}
+
+/* .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10vw;
+  height: 80vh;
+  padding-left: 10vw;
+  padding-right: 10vw;
+} */
+
+/* .bg-container {
+  background-color: #fff;
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(60deg, #ff6596, #60f89f, #535acd);
+  background-size: 600% 600%;
+  animation: bgAnimatedGradient 30s infinite linear;
+} */
+
+/*************************flexbox*************************/
+
+section {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e1ea88;
+  height: 300vh;
+  padding-bottom: 25%;
+}
+.container {
+  height: 100%;
+}
+
+.wrapper-1 {
+  height: 700px;
+  width: 100vw;
+  margin: 0%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper-2 {
+  height: 700px;
+  width: 100vw;
+  margin: 0%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/*************************1*************************/
+.billede-1 {
+  width: 1080px;
+  height: 650px;
+  background: url(pics/02emnesite/02_emnesite_2.png) no-repeat center / cover;
+  border-radius: 70px;
+  margin-left: 0;
+}
+
+.billede-2 {
+  width: 1080px;
+  height: 650px;
+  background: url(pics/02emnesite/02_emnesite_1.png) no-repeat center / cover;
+  border-radius: 70px;
+  margin-left: 0;
+}
+
+.billede-3 {
+  width: 1080px;
+  height: 650px;
+  background: url(pics/02emnesite/02_emnesite_3.png) no-repeat center / cover;
+  border-radius: 70px;
+  margin-left: 0;
+}
+
+.billede-4 {
+  width: 1080px;
+  height: 650px;
+  background: url(pics/02emnesite/tobg_moodboard_v1_1.png) no-repeat center / contain;
+  border-radius: 70px;
+  margin-left: 0;
+}
+
+.tekst-1 {
+  width: 600px;
+  height: 50%;
+  background-color: #535acd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+  border-radius: 70px;
+  color: white;
+  margin-left: -10%;
+  margin-right: 0;
+  z-index: 1;
+}
+
+.tekst-2 {
+  width: 600px;
+  height: 50%;
+  background-color: #535acd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+  border-radius: 70px;
+  color: white;
+  margin-left: 0;
+  margin-right: -170px;
+  z-index: 1;
+}
+
+.content h1 {
+  font-size: 2rem;
+  font-family: "NuberNextExtended-Heavy";
+  color: #e1ea88;
+}
+.content p {
+  font-size: 1.3rem;
+  margin: 30px 0;
+  font-weight: 500vw;
+  line-height: 25px;
+  font-family: "SF-Pro-Display-Regular";
+}
+.right a {
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: white;
+  color: black;
+  padding: 20px 30px;
+  display: inline-block;
+  letter-spacing: 2px;
+}
+/*************************media*************************/
+
+@media only screen and (max-width: 1080px) {
+  .box02-01-02 {
+    font-size: 25px;
+  }
+
+  section {
+    height: 470vh;
+  }
+
+  .wrapper-1 {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100vw;
+    margin-top: 10vh;
+  }
+  .billede-1 {
+    width: 90vw;
+    height: 50vh;
+    margin-top: -35px;
+  }
+  .tekst-1 {
+    width: 75vw;
+    min-height: 260px;
+    margin-top: -40px;
+    margin-left: 0;
+  }
+
+  .wrapper-2 {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin-top: 10vh;
+  }
+
+  .billede-2 {
+    width: 90vw;
+    height: 50vh;
+    margin-top: -35px;
+  }
+
+  .billede-3 {
+    width: 90vw;
+    height: 50vh;
+    margin-top: -35px;
+  }
+
+  .billede-4 {
+    width: 90vw;
+    height: 50vh;
+    margin-top: -35px;
+  }
+
+  .tekst-2 {
+    width: 75vw;
+    min-height: 260px;
+    margin-top: 0;
+    margin-right: 0;
+  }
+
+  .content p {
+    font-size: 15px;
+    margin: 30px 0;
+  }
+
+  .content h1 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1080px) {
+  .bokse-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 20vh;
+    padding-top: 0%;
+  }
+
+  .expand_a1 {
+    text-decoration: none;
+    font-size: 0.9em;
+    display: block;
+    transition: 0.3s;
+    font-family: "NuberNextExtended-Heavy";
+    letter-spacing: 2px;
+    white-space: nowrap;
+  }
+
+  .header {
+    max-width: 1224px;
+    width: 90%;
+    color: #223845;
+    text-decoration: none;
+    position: fixed;
+    padding: 0px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  h3 {
+    font-size: 1em;
+    text-align: left;
+    padding-left: 0px;
+    padding-right: 10%;
+    margin-top: 55px;
+    margin-bottom: 15px;
+    font-family: "SF-Pro-Display-Bold";
+    letter-spacing: 5px;
+    color: #60538e;
+  }
+
+  span {
+    background-color: #223845;
+    border-radius: 25px;
+    margin-right: 8px;
+    margin-top: 20px;
+    position: fixed;
+    padding: 5px 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 35px;
+  }
+
+  .overlay .closebtn {
+    position: absolute;
+    padding-right: 10%;
+    top: 20px;
+    right: 8px;
+    font-size: 60px;
+  }
+}
